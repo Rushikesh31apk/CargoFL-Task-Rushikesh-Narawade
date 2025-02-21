@@ -10,7 +10,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/CargoFL-Task-Rushikesh-Narawade.git
+git clone https://github.com/Rushikesh31apk/CargoFL-Task-Rushikesh-Narawade.git
 cd CargoFL-Task-Rushikesh-Narawade
 ```
 
