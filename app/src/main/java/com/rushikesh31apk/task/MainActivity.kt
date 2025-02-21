@@ -1,6 +1,6 @@
 package com.rushikesh31apk.task
 
-import HomeScreen
+
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.rushikesh31apk.task.ui.theme.TaskTheme
+import com.rushikesh31apk.task.ui_layer.screens.HomeScreen
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")

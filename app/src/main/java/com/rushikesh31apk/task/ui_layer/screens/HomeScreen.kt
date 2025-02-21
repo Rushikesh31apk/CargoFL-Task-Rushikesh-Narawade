@@ -1,3 +1,5 @@
+package com.rushikesh31apk.task.ui_layer.screens
+
 import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -18,11 +20,13 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
 import com.rushikesh31apk.task.data.fromServer.responce.TaskResponceItem
+import com.rushikesh31apk.task.ui_layer.AppViewModel
 import com.rushikesh31apk.task.ui_layer.UiState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(viewModel: AppViewModel = viewModel()) {
+
     val uiState by viewModel.uiState.collectAsState()
 
     Scaffold(
@@ -137,7 +141,7 @@ fun ErrorState(message: String, onRetry: () -> Unit) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = message,
+            text = "Check Your Internet Connection\nor\n $message",
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.error,
             textAlign = TextAlign.Center
