@@ -205,6 +205,7 @@ fun ImageCard(item: TaskResponceItem) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(item.height.dp)
+                    .width(item.width.dp)
                     .clip(MaterialTheme.shapes.medium),
                 contentScale = ContentScale.Crop
             )
@@ -216,7 +217,7 @@ fun ImageCard(item: TaskResponceItem) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Image Id : ${item.id}",
+                    text = "Image Id : ${item.id} Hight : ${item.height} Width : ${item.width}",
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurface
                 )
